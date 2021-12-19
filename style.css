@@ -11,7 +11,7 @@
 
 body{
     margin: 0;
-    padding: 0;
+    padding: 50px 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
@@ -26,23 +26,71 @@ span {
     color: var(--white);
 }
 
-/* .card {
-    
-} */
+.card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    min-height: 100vh;
+}
+
+.card .main-img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.card h1 {
+    font-size: 24px;
+}
 
 .card p {
     color: var(--soft-blue);
+    align-content: flex-start;
+}
+
+.card .main-text {
+    max-width: 300px;
 }
 
 .card .left {
     color: var(--cyan);
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+}
+
+.card .right {
+    text-align: right;
+    display: inline-block;
+    width: 45%;
 }
 
 .card h1 {
     color: var(--white);
 }
 
-img {
-    height: 50px;
-    width: 50px;
+.line {
+    height: 0.5px;
+    width: 100%;
+    background-color: var(--line);
+    margin-bottom: 20px;
+}
+
+.card .creation::before {
+    height: 20px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.card .creation img {
+    display: inline-block;
+    border-radius: 50%;
+    border-color: #ffffff;
+    height: 35px;
+    width: 35px;
+}
+
+.card .creation p {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
 }
